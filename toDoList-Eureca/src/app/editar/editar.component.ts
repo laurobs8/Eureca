@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { TarefaService } from '../shared/tarefa.service';
 import { TarefaDataService } from '../shared/tarefa-data.service';
 import { Tarefa } from '../shared/tarefa';
+import { Key } from 'protractor';
 
 @Component({
   selector: 'app-editar',
@@ -24,18 +25,18 @@ export class EditarComponent implements OnInit {
         this.tarefa.detalhes = data.tarefa.detalhes;
         this.key = data.key;
       }
-    })
+    });
   }
 
   onSubmit() {
     if (this.key) {
-      this.tarefaService.atualizar(this.tarefa, this.key)
-
+      this.tarefaService.atualizar(this.tarefa, this.key);
     } else {
-      this.tarefaService.inserir(this.tarefa)
+      this.tarefaService.inserir(this.tarefa);
     }
 
     this.tarefa = new Tarefa();
+    this.key = '';
   }
 
 }
