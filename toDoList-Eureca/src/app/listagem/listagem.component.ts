@@ -20,9 +20,9 @@ export class ListagemComponent implements OnInit {
     this.tarefas = this.tarefaService.todos();
   }
 
-  // delete(key: string) {
-  //   this.tarefaService.delete(key); // TODO
-  // }
+  delete(key: string) {
+    this.tarefaService.delete(key); // TODO
+  }
 
   editar(tarefa: Tarefa, key: string) {
     this.tarefaDataService.mudarTarefa(tarefa, key);

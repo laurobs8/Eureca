@@ -35,7 +35,7 @@ export class TarefaService {
       );
   }
 
-  // delete(key: string) {
-  //   this.db.object(`tarefa/${key}`).remove();
-  // }
+  delete(key: string) {
+    this.db.object(`tarefa/${key}`).remove();
+  }
 }
