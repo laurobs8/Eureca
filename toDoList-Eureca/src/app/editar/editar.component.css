@@ -1,0 +1,19 @@
+form {
+    z-index: 5;
+    position: relative;
+    color: rgb(236, 221, 8);
+    font-size: 22px
+}
+form button {
+    display: flow-root;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 auto;
+    width: 50%;
+}
+.btn  {
+    color: #fff200;
+    background-color: #221f1f;
+    border-color: #fff200;
+    font-size: 18px;
+}

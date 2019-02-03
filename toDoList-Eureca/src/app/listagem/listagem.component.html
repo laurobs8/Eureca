@@ -1,10 +1,12 @@
-<div class="card mt-2" *ngFor="let tarefa of tarefas | async">
-  <div class="card-body">
-    <h5 class="card-title">{{tarefa.titulo}}</h5>
-    <p class="card-text">{{tarefa.detalhes}}</p>
-  </div>
-  <div class="card-footer">
-    <button type="button" class="btn btn-default" (click)="editar(tarefa, tarefa.key)" >Editar</button>
-    <button type="button" class="btn btn-danger" (click)="delete(tarefa.key)" >Excluir</button>
+<div >
+  <div id="cards" class="card mt-2" *ngFor="let tarefa of tarefas | async">
+    <div class="card-body">
+      <h5 class="card-title">{{tarefa.titulo}}</h5>
+      <p class="card-text">{{tarefa.detalhes}}</p>
+    </div>
+    <div class="card-footer">
+      <button type="button" class="btn btn-primary" (click)="editar(tarefa, tarefa.key)">Editar</button>
+      <button type="button" class="btn btn-danger" (click)="delete(tarefa.key)">Excluir</button>
+    </div>
   </div>
 </div>

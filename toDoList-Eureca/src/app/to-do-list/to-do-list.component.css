@@ -1,5 +1,6 @@
 p{
-    width: 50%
+    width: 50%;
+    font-family: 'K2D', sans-serif;
 }
 .col-3{
    display: flex;

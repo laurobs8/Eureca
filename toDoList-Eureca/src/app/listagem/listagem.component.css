@@ -1,0 +1,19 @@
+#cards{
+    background-color: rgba(255, 255, 255, 0.644);
+    z-index: 5;
+}
+.card-footer{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.card-footer button{
+    margin: 4px;
+    width: 50%
+}
+.btn  {
+    color: #fff200;
+    background-color: #221f1f;
+    border-color: #fff200;
+    font-size: 18px;
+}
