@@ -1,0 +1,27 @@
+#abertura {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+h2 {
+    z-index: 5;
+    position: relative;
+    color: bisque;
+    margin: 5% 10%;
+    text-align: center;
+    overflow: hidden;
+}
+
+h2 button {
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 auto;
+    width: 30%;
+    margin-top: 50px
+}
+.btn  {
+    color: #fff200;
+    background-color: transparent;
+    border-color: #fff200;
+    font-size: 18px;
+}
