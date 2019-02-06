@@ -1,0 +1,32 @@
+.container {
+    text-align: initial;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 13%;
+}
+.info {
+    margin: 0 auto;
+    align-content: center;
+    z-index: 5;
+    position: relative;
+    color: bisque;
+    overflow: hidden;
+}
+li {
+    list-style: square
+}
+#sobre {
+    z-index: 5;
+    text-align: center;
+    position: relative;
+    color: bisque;
+    background-color: transparent;
+}
+.btn  {
+    color: #fff200;
+    background-color: transparent;
+    border-color: #fff200;
+    font-size: 18px;
+}
+
