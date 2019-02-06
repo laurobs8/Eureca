@@ -1,3 +1,10 @@
+.container {
+    background-color: #111;
+    padding: 20px;
+    margin: 0 auto;
+    width: 30%;
+    z-index: 0;
+}
 form {
     z-index: 5;
     position: relative;
@@ -16,4 +23,22 @@ form button {
     background-color: #221f1f;
     border-color: #fff200;
     font-size: 18px;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 5;
+    position: relative;
+    color: rgb(236, 221, 8);
+    font-size: 22px;
+    margin-right: 25px;
+    margin-left: 25px;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    margin-top: -42px
+}
+nav a {
+    text-decoration: none;
+    color: #fff200
 }

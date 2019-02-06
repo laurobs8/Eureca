@@ -77,17 +77,17 @@ header a, a:visited {
   width:100%;
   height:100%;
   display:ruby-base-container;
-  z-index: 0
+  z-index: 2
 }
 
 .stars {
   background:#000 url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
-  z-index:0;
+  z-index:2;
 }
 
 .twinkling{
   background:transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center;
-  z-index:0;
+  z-index:2;
 
   -moz-animation:move-twink-back 200s linear infinite;
   -ms-animation:move-twink-back 200s linear infinite;

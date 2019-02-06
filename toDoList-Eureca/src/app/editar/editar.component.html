@@ -1,13 +1,22 @@
-<form (ngSubmit)="onSubmit()">
-  <div class="form-group">
-    <label>Título</label>
-    <input type="text" class="form-control" [(ngModel)]="tarefa.titulo" name="titulo">
-  </div>
+<nav>
+  <a routerLink="/abertura">Voltar</a>
+  <a routerLink="/about">Sobre</a>
+</nav>
 
-  <div class="form-group">
-    <label>Detalhes</label>
-    <textarea type="text" class="form-control" [(ngModel)]="tarefa.detalhes" name="detalhes"></textarea>
-  </div>
+<div class="container">
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label>Título</label>
+      <input type="text" class="form-control" [(ngModel)]="tarefa.titulo" name="titulo">
+    </div>
 
-  <button type="submit" class=" btn btn">Adicionar Tarefa</button>
-</form>
+    <div class="form-group">
+      <label>Detalhes</label>
+      <textarea type="text" class="form-control" [(ngModel)]="tarefa.detalhes" name="detalhes"></textarea>
+    </div>
+
+    <button type="submit" class=" btn btn">Adicionar Tarefa</button>
+  </form>
+
+</div>
+<app-listagem></app-listagem>
