@@ -1,7 +1,7 @@
-<div >
+<div class="container">
   <div id="cards" class="card mt-2" *ngFor="let tarefa of tarefas | async">
     <div class="card-body">
-      <h5 class="card-title">{{tarefa.titulo}}</h5>
+      <h5 class="card-title"> <b> {{tarefa.titulo}}</b></h5>
       <p class="card-text">{{tarefa.detalhes}}</p>
     </div>
     <div class="card-footer">
